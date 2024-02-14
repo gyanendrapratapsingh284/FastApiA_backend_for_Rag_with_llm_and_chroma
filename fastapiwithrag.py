@@ -24,7 +24,7 @@ def model_function(File,query):
 
         db = Chroma.from_documents(docs, embeddings)
 
-        os.environ["OPENAI_API_KEY"] = "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"
+        os.environ["OPENAI_API_KEY"] = "Own_OpenAI_key"
         model_name = "gpt-3.5-turbo"
         llm = ChatOpenAI(model_name=model_name)
 
